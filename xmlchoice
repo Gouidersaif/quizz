@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sport_btn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.odc.myquizzapplication.Controller.ChoiceActivity">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="choose the category you'd like to test your skills "
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"/>
+
+
+
+
+    <CheckBox
+        android:id="@+id/HistoryAndGeography_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History and Geography"
+        android:onClick="selectItem"/>
+
+
+    <CheckBox
+        android:id="@+id/sports_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sports"
+        android:onClick="selectItem"/>
+
+    <CheckBox
+        android:id="@+id/IQ_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IQ"
+        android:onClick="selectItem"/>
+
+    <CheckBox
+        android:id="@+id/Technology_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Technology"
+        android:onClick="selectItem"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="you can also try the multiple choice quizz test by choosing multiple categories"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="267dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's Go"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/letsgo_btn"
+        android:onClick="finalSelection"/>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/quizz2"/>
+
+</LinearLayout>
